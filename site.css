@@ -5,6 +5,23 @@ body, html {
     height: 100%;
 }
 
+h1 {
+    font-size: 1.8em;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clear-float {
+    float: none;
+    clear: both;
+}
+
 article {
     height: 100%;
 }
@@ -17,7 +34,7 @@ header {
     box-sizing: border-box;
 }
 
-h2 {
+header h2 {
     color: #FFF;
     padding:0;
     margin:0;
@@ -35,6 +52,8 @@ nav#left {
     width:180px;
     height:100%;
     background-color:#CCC;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 nav#left ul {
@@ -44,8 +63,12 @@ nav#left ul {
 
 nav#left ul li {
   padding: 10px 10px 10px 15px;
-  color: #fff;
   border-bottom: 1px solid #FFF;
+}
+
+nav#left ul li a {
+  color: #000;
+  text-decoration: none;
 }
 
 nav#left ul li:hover {
@@ -58,6 +81,33 @@ nav#left ul li:hover {
     background-color: #FFF;
     border-radius: 5px;
     padding: 5px;
+}
+
+.profile-photo {
+    float:left;
+    margin-right: 15px;
+}
+
+.summary-content {
+    overflow: hidden;
+}
+
+.skills-list {
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+.skills-header {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 5px;
 }
 
 #right {
